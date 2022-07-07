@@ -24,8 +24,7 @@ while True:
     
     cv2.imshow("frame",frame)
     cv2.imshow("edges",edges)
-    key=cv2.waitKey(25)
-    if(key==27):
+    if cv2.waitKey(2) & 0xFF == ord('q'):
         break
     
 
